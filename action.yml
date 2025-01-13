@@ -87,6 +87,6 @@ runs:
 
           echo "digest=$digest" >> $GITHUB_OUTPUT
 
-    # - uses: actions/upload-artifact@v4
-    #   with:
-    #     path: ${{ steps.package.outputs.package }}.wasm
+    - uses: actions/upload-artifact@v4
+      with:
+        path: ${{ steps.package.outputs.package }}.wasm
